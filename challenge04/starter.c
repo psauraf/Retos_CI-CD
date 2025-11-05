@@ -1,6 +1,7 @@
 #include "calc.h"
 #include <stdio.h>
 
+#ifndef UNIT_TEST
 int main(void) {
     printf("Calculadora modularizada.\n");
     printf("Suma: %d\n", suma(5, 3));
@@ -9,3 +10,4 @@ int main(void) {
     printf("División: %d\n", division(10, 2));
     return 0;
 }
+#endif
