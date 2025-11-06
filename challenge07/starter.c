@@ -2,7 +2,9 @@
 
 int suma(int a, int b);
 
-int main() {
+#ifndef UNIT_TEST
+int main(void) {
     printf("CI con GitHub Actions listo.\n");
     return 0;
 }
+#endif
