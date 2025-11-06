@@ -14,8 +14,10 @@ jobs:
       - name: Install build tools
         run: sudo apt-get update && sudo apt-get install -y gcc make
 
-      - name: Build
+      - name: Build (challenge07)
         run: make
+        working-directory: challenge07
 
-      - name: Run tests
+      - name: Test (challenge07)
         run: make test
+        working-directory: challenge07
